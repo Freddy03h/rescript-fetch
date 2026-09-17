@@ -97,9 +97,9 @@ module Headers = {
   @send
   external forEach: (t, (string, string, t) => unit) => unit = "forEach"
 
-  @send external entries: t => Iterator.t<(string, string)> = "entries"
-  @send external keys: t => Iterator.t<string> = "keys"
-  @send external values: t => Iterator.t<string> = "values"
+  @send external entries: t => Iterator.t<(string, string), 'return, 'next> = "entries"
+  @send external keys: t => Iterator.t<string, 'return, 'next> = "keys"
+  @send external values: t => Iterator.t<string, 'return, 'next> = "values"
 }
 
 module Request = {

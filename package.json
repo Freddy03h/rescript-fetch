@@ -26,6 +26,6 @@
     "rescript.json"
   ],
   "devDependencies": {
-    "rescript": "^12.2.0"
+    "rescript": "13.0.0-alpha.6"
   }
 }
